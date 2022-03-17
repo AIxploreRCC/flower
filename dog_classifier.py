@@ -17,7 +17,7 @@ def predict(img):
     prob = round(torch.max(probs).item() * 100, 2)
     st.success(f'This is a {clas} with a probability of {prob}%.')
     
-option = st.radio('', ['Choose your own image'])
+st.radio('', ['Choose your own image'])
 
 uploaded_file = st.file_uploader('Please upload an image', type='jpg')
 img = PILImage.create(uploaded_file)
