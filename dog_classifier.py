@@ -33,7 +33,7 @@ class Predict:
 
 if __name__=='__main__':
 
-    file_name='dog.pkl'
+    file_name='flower.pkl'
 
     predictor = Predict(file_name)
 
