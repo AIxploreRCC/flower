@@ -5,7 +5,7 @@ import time
 
 st.set_page_config('flower classification')
 st.title('flower classification')
-st.markdown ("**Enter Your Information**")
+st.markdown ("**Roses, Daisy, Dandelion, Sunflowers, Tulips**")
 
 learn = load_learner('flower.pkl')
 
