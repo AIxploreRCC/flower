@@ -27,7 +27,7 @@ if uploaded_file is not None:
 
     
 
- import cv2
+import cv2
 import streamlit as st
 
 st.title("Webcam Live Feed")
