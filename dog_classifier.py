@@ -3,8 +3,8 @@ import streamlit as st
 import os
 import time
 
-st.set_page_config('PETS', '🐶&🐱')
-st.title('PETS 🐶&🐱')
+st.set_page_config('flower classification')
+st.title('flower classification')
 
 learn = load_learner('flower.pkl')
 
