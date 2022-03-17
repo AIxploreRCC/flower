@@ -20,5 +20,7 @@ def predict(img):
 st.radio('', ['Choose your own image'])
 
 uploaded_file = st.file_uploader('Please upload an image', type=['png','jpeg', 'jpg'])
-img = PILImage.create(uploaded_file)
-predict(img)
+
+if uploaded_file is not None:
+ img = PILImage.create(uploaded_file)
+ predict(img)
