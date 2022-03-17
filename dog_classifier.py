@@ -10,8 +10,8 @@ from PIL import ExifTags
 from fastai.learner import load_learner
 from fastai.vision.core import PILImage
 
-REPO_DIR = 'https://github.com/AIxploreRCC/flower'
-MODEL_FILE = 'dogs_online_resnet50_cpu.pkl'
+REPO_DIR = 'https://github.com/AIxploreRCC/flower/raw/main'
+MODEL_FILE = 'flower.pkl'
 
 st.set_page_config(
     page_title="Dog Classifier - Will Jobs",
