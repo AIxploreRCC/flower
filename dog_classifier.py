@@ -31,6 +31,3 @@ if option == 'Choose a test image':
         img = PILImage.create(uploaded_file)
         predict(img)
         
-else:
-    input_img = Image.open(file_image)
-
