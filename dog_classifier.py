@@ -25,10 +25,4 @@ if uploaded_file is not None:
  img = PILImage.create(uploaded_file)
  predict(img)
 
- 
 
-import cv2
-from PIL import Image
-import numpy as np
-st.title("PencilSketcher App - updated streamlit camera 📷 module")
-st.write("This Web App is to help convert your photos to realistic Pencil Sketches")
