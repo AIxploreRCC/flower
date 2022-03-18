@@ -3,7 +3,6 @@ import streamlit as st
 import os
 import time
 import numpy as np # for image processing 
-from PIL import Image #Image processing 
 import cv2 #computer vision 
 
 st.set_page_config('flower classification')
