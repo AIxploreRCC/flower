@@ -20,7 +20,6 @@ def predict(img):
     prob = round(torch.max(probs).item() * 100, 2)
     st.success(f'This is a {clas} with a probability of {prob}%.')
 
-file_image = st.camera_input(label = "Take a pic of you to be sketched out")
 
 option = st.radio('', ['Take a photo', 'Choose your own image'])
 
