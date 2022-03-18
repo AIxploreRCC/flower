@@ -30,3 +30,8 @@ if option == 'Choose a test image':
         img = PILImage.create(uploaded_file)
         predict(img)
         
+else:
+    uploaded_file = st.file_uploader('Please upload an image', type='jpg')
+    if uploaded_file is not None:
+        img = PILImage.create(uploaded_file)
+        predict(img)
