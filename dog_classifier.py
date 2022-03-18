@@ -6,7 +6,6 @@ import numpy as np # for image processing
 from PIL import Image
 
 
-
 st.set_page_config('flower classification')
 st.title('flower classification')
 st.markdown ("**Roses, Daisy, Dandelion, Sunflowers, Tulips**")
@@ -23,7 +22,6 @@ def predict(img):
 
 file_image = st.camera_input(label = "Take a pic of you to be sketched out")
 
-    
 option = st.radio('', ['Take a photo', 'Choose your own image'])
 
 if option == 'Choose a test image':
@@ -33,6 +31,7 @@ if option == 'Choose a test image':
         predict(img)
         
 else:
+    file_image = st.camera_input(label = "Take a pic of you to be sketched out")
     uploaded_file = st.file_uploader('Please upload an image', type='jpg')
     if uploaded_file is not None:
         img = PILImage.create(uploaded_file)
