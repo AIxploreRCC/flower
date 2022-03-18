@@ -4,7 +4,7 @@ import os
 import time
 import numpy as np # for image processing 
 from PIL import Image
-import cv2 #computer vision 
+
 
 
 st.set_page_config('flower classification')
