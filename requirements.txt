@@ -1,6 +1,6 @@
 fastai==2.4
 fastcore==1.3.20
-streamlit==0.84.0
+streamlit
 pillow==8.2
 opencv-python-headless
 numpy
