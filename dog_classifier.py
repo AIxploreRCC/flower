@@ -31,7 +31,6 @@ if option == 'Choose a test image':
         
 else:
     file_image = st.camera_input(label = "Take a pic of you to be sketched out")
-    uploaded_file = st.file_uploader('Please upload an image', type='jpg')
     if uploaded_file is not None:
         img = PILImage.create(uploaded_file)
         predict(img)
