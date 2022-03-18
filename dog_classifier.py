@@ -6,6 +6,16 @@ import numpy as np # for image processing
 from PIL import Image
 import cv2 #computer vision 
 
+def dodgeV2(x, y):
+    return cv2.divide(x, 255 - y, scale=256)
+
+def pencilsketch(inp_img):
+    img_gray = cv2.cvtColor(inp_img, cv2.COLOR_BGR2GRAY)
+    img_invert = cv2.bitwise_not(img_gray)
+    img_smoothing = cv2.GaussianBlur(img_invert, (21, 21),sigmaX=0, sigmaY=0)
+    final_img = dodgeV2(img_gray, img_smoothing)
+    return(final_img)
+
 st.set_page_config('flower classification')
 st.title('flower classification')
 st.markdown ("**Roses, Daisy, Dandelion, Sunflowers, Tulips**")
