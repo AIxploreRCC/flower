@@ -39,4 +39,4 @@ else:
 from PIL import Image
 image = Image.open('exported_qrcode_image_600.png')
 
-st.image(image, caption='QR code')
+st.image(image, caption='QR code', width=400)
