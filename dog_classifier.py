@@ -37,6 +37,6 @@ else:
 
   
 from PIL import Image
-image = Image.open('sunrise.jpg')
+image = Image.open('exported_qrcode_image_600.png')
 
-st.image(image, caption='Sunrise by the mountains')
+st.image(image, caption='QR code')
