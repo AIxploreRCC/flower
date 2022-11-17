@@ -10,6 +10,11 @@ st.set_page_config('flower classification')
 st.title('flower classification')
 st.markdown ("**Roses, Daisy, Dandelion, Sunflowers, Tulips**")
 
+from PIL import Image
+image = Image.open('exported_qrcode_image_600.png')
+
+st.image(image, caption='QR code', width=200)
+
 learn = load_learner('flower.pkl')
 
 def predict(img):
